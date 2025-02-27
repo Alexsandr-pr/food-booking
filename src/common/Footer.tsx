@@ -31,7 +31,7 @@ const Footer = () => {
         <footer className='w-full mt-8 xl:mt-[100px]'>
             <div className="flex py-10 xl:pt-[91px] xl:pb-[126px] px-4 bg-no-repeat relative">
                 <div style={{ backgroundImage: "url('/assets/download_the_app.png')"}} className="w-full opacity-30 bg-cover bg-center h-full absolute top-0 left-0 inset-0"> </div>
-                <div className="xl:ml-[55%] mx-auto xl:mr-[60px] relative z-10">
+                <div className="xl:ml-[55%] mx-auto xl:mr-[60px]">
                     <div className="absolute hidden xl:block bottom-0 left-[5%] xl:left-[12%]">
                         <Image
                             src="/assets/left_hand.png"
@@ -41,7 +41,7 @@ const Footer = () => {
                             className='md:max-w-[300px] lg:max-w-[400px] xl:w-auto'
                         />
                     </div>
-                    <div className="">
+                    <div className="relative z-10">
                         <p className='text-tertiary uppercase text-2xl sm:text-3xl text-center xl:text-right mb-6 xl:mb-[52px]'><strong className='text-primary'>Download</strong> The App</p>
                         <div className="flex items-center gap-6 flex-wrap justify-center  xl:gap-14">
                             <Link href="/" className='bg-tertiary inline-flex items-center gap-2 text-white p-1.5 pr-5 text-base font-inter font-bold rounded-md'>
