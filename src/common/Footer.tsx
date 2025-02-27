@@ -31,7 +31,7 @@ const Footer = () => {
         <footer className='w-full mt-8 xl:mt-[100px]'>
             <div className="flex py-10 xl:pt-[91px] xl:pb-[126px] px-4 bg-no-repeat relative">
                 <div style={{ backgroundImage: "url('/assets/download_the_app.png')"}} className="w-full opacity-30 bg-cover bg-center h-full absolute top-0 left-0 inset-0"> </div>
-                <div className="xl:ml-[55%] mx-auto xl:mr-[60px]">
+                <div className="xl:ml-[55%] mx-auto xl:mr-[60px] relative z-10">
                     <div className="absolute hidden xl:block bottom-0 left-[5%] xl:left-[12%]">
                         <Image
                             src="/assets/left_hand.png"
