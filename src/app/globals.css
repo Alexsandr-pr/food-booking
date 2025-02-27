@@ -3,19 +3,78 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --Primary: #F49B33;
+    --Secondary: #2B2B2B;
+    --Tertiary: #5E5E5E;
+    --Sub: #CECECE;
+    --White: #FFF;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --Primary: #F49B33;
+        --Secondary: #2B2B2B;
+        --Tertiary: #5E5E5E;
+        --Sub: #CECECE;
+        --White: #FFF;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html,body {
+    background: #F6F6F6;
+    color: var(--Tertiary);
+    overflow-x: hidden;
+    font-family: var(--font-inter);
+}
+.card-content {
+    max-height: 100%;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+
+.content-layout {
+    
+}
+@media (min-width: 1280.98px) {
+    .content-layout__main {
+        width: calc(100% - 327px - 113px);
+        max-width: calc(100% - 327px - 163px);
+        min-width: calc(100% - 327px - 113px);
+    }
+    
+    .content-layout__aside {
+        width: 327px;
+        max-width: 327px;
+        min-width: 327px;
+    }
+}
+
+@media (max-width:  1280.98px) {
+    .content-layout__main {
+        width: calc(100% - 327px - 80px);
+        max-width: calc(100% - 327px - 80px);
+        min-width: calc(100% - 327px - 80px);
+    }
+    
+    .content-layout__aside {
+        width: 327px;
+        max-width: 327px;
+        min-width: 327px;
+    }
+}
+@media (max-width:  1024.98px) {
+    .content-layout__main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .content-layout__aside {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
